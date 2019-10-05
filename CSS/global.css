@@ -1,0 +1,584 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", "微軟正黑體", "Microsoft JhengHei", "Roboto", "sans-serif";
+  color: #545b6e;
+}
+
+body {
+  overflow-Y: auto;
+  overflow-X: hidden;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+video {
+  width: 100%;
+}
+
+button {
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+button.white {
+  background-color: #fafafa;
+  border: solid 1px #545b6e;
+  color: #545b6e;
+}
+
+button.gray {
+  background-color: #545b6e;
+  color: #ffffff;
+}
+
+button.blur {
+  background-color: #DFE2E6;
+  color: #ffffff;
+}
+
+button.orange {
+  width: 164px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #e69d42;
+}
+
+header #bugger {
+  width: 5px;
+  height: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  opacity: 0;
+}
+
+main,
+section {
+  min-height: 100vh;
+}
+
+main h2.title {
+  font-size: 20px;
+  padding: 10px 0 15px;
+  font-weight: bold;
+}
+
+form {
+  text-align: left;
+  font-size: 0;
+}
+
+form label~label {
+  margin-right: 10px;
+}
+
+form input,
+form select,
+form option,
+form textarea {
+  opacity: 0.8;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+  border: solid 1px #dfe2e6;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: left;
+  color: #3f3356;
+  padding: 10px;
+  height: 40px;
+  display: block;
+  width: 100%;
+}
+
+form input[type="date"],
+form input[type="file"],
+form input[type="number"],
+select {
+  padding: 0 10px;
+}
+
+form input[type="radio"] {
+  margin-right: 10px;
+}
+
+form input[type="radio"],
+form input[type="number"],
+form input[type="checkbox"] {
+  width: unset;
+  height: 40px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+form label input:hover,
+form label+input:hover,
+form input:hover,
+form select:hover,
+form textarea:hover {
+  border: 1px solid #545b6e;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #dfe2e6;
+}
+
+form select,
+form select,
+option {
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+}
+
+form .inputWrap {
+  vertical-align: top;
+  padding-top: 5px;
+  font-size: 0;
+}
+
+form .inputWrap .iconPosition {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+form .inputWrap .iconWrong {
+  height: 17px;
+  width: 17px;
+  text-align: left;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+form .inputWrap .inputIcon {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 35%;
+  right: 10px;
+  cursor: pointer;
+}
+
+form .inputWrap .err {
+  height: 19px;
+}
+
+form .inputWrap .err img,
+form .inputWrap .err span {
+  /* display: none; */
+}
+
+form .inputWrap .err span {
+  font-size: 13px;
+  text-align: left;
+  color: #ff0000;
+  vertical-align: top;
+  padding-left: 5px;
+}
+
+.full-width {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fixed-width {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media screen and (min-width:300px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p,
+  form,
+  label {
+    font-size: 16px;
+  }
+  button {
+    width: 105px;
+  }
+  header.full-width {
+    height: 77px;
+  }
+  header .fixed-width {
+    padding: 24px 21px 9px;
+    background-color: #545b6e;
+  }
+  header #bugger:checked~nav ul {
+    right: 0%;
+    transition: all .5s;
+    z-index: 2;
+  }
+  header #bugger:checked~.coverScreen {
+    display: block;
+  }
+  header .logo {
+    width: 50%;
+    float: left;
+    vertical-align: middle;
+    text-align: left;
+  }
+  header .logoImgWrap {
+    width: 40px;
+    height: 43px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(/imgs/webimages/logo_color.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  header .logo span {
+    display: none;
+  }
+  header nav {
+    width: 50%;
+    float: right;
+    text-align: right;
+    height: 43px;
+  }
+  header nav label.menuControl {
+    background-image: url(/imgs/svgicon/icon_select.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 30px;
+    right: 20px;
+  }
+  header nav ul {
+    background-color: #545b6e;
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    top: 69px;
+    right: -101%;
+    padding: 25px 20px 46px 20px;
+    transition: all .5s;
+  }
+  header nav li {
+    display: block;
+  }
+  header nav li:hover a {
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid #ffffff;
+    opacity: 1;
+  }
+  header nav a {
+    border-bottom: 1px solid #ffffff50;
+    display: block;
+    padding: 14px 0 5.3px;
+    opacity: 0.5;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    text-align: left;
+    color: #ffffff;
+  }
+  header label.coverScreen {
+    display: none;
+    position: fixed;
+    top: 215px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: calc(100vh - 215px);
+    background-color: transparent;
+  }
+  header.full-img+main .imgArea {
+    display: none;
+  }
+  main {
+    min-height: calc(100vh - 77px);
+  }
+  main .fixed-width {
+    padding: 30px 45px 0;
+  }
+  main .breadcrumbs {
+    display: none;
+  }
+  form .btnWrap {
+    padding-top: 20px;
+  }
+  form .btnWrap {
+    padding-top: 20px;
+  }
+  .btnWrap button.gray a {
+    Color: #fff;
+  }
+  form .btnWrap button:last-child a {
+    color: #fff;
+  }
+  footer {
+    height: 0;
+    text-align: center;
+    transform: translateY(-55px);
+    font-size: 16px;
+    font-weight: 300;
+    color: #545b6e;
+  }
+}
+
+@media screen and (min-width:768px) {
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+  button {
+    width: 160px
+  }
+  header.full-width {
+    height: 98px;
+  }
+  header .fixed-width {
+    padding: 24px 43px 13px;
+  }
+  header .logoImgWrap {
+    width: 56px;
+    height: 60px;
+  }
+  header nav {
+    height: 60px;
+  }
+  header nav label.menuControl {
+    width: 30px;
+    height: 30px;
+    top: 40px;
+    right: 43px;
+  }
+  header nav ul {
+    top: 96px;
+    padding: 54px 71px 97px 42px;
+  }
+  header nav a {
+    font-size: 32px;
+    letter-spacing: 3.2px;
+    padding: 21px 0 14px;
+  }
+  header label.coverScreen {
+    top: 400px;
+    height: calc(100vh - 400px);
+  }
+  main {
+    min-height: calc(100vh - 98px);
+  }
+  main .fixed-width {
+    padding: 9px 100px 0;
+  }
+  main .textArea {
+    text-align: left;
+  }
+  main h2.title {
+    font-size: 27px;
+  }
+  main .breadcrumbs {
+    display: inline-block;
+    font-size: 14px;
+  }
+  form .inputWrap {
+    width: 45%;
+    display: inline-block;
+  }
+  form .inputWrap .confirm,
+  form .inputWrap .verificationBtn {
+    width: 108px;
+    float: right;
+    vertical-align: bottom;
+  }
+  form .inputWrap .abreast {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 128px);
+  }
+  form .inputWrap:nth-child(even) {
+    float: right;
+  }
+  form .btnWrap {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 27px;
+  }
+  header.full-width {
+    height: 113px;
+  }
+  header .fixed-width {
+    padding: 36px 56px 0px;
+    background-color: transparent;
+  }
+  header #bugger:checked~nav ul {
+    left: 0;
+    transform: none;
+    transition: none;
+    z-index: 2;
+  }
+  header #bugger:checked~.coverScreen {
+    display: none;
+  }
+  header .logoImgWrap {
+    width: 71px;
+    height: 77px;
+    background-image: url(/imgs/webimages/logo_color.svg);
+  }
+  header .logo span {
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #545b6e;
+  }
+  header .logo span:after {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: #545b6e;
+    transform: translateX(19px) translateY(-5px);
+  }
+  header nav {
+    height: 77px;
+  }
+  header nav label.menuControl {
+    background-image: none;
+    top: -30px;
+    right: -20px;
+  }
+  header nav ul {
+    background-color: transparent;
+    text-align: right;
+    position: relative;
+    top: 0px;
+    left: 0;
+    padding: 0;
+    transform: none;
+    transition: none;
+  }
+  header nav li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 29px 0;
+  }
+  header nav li:nth-of-type(2) {
+    margin: 0 50px;
+  }
+  header nav li:hover a {
+    color: #545b6e;
+    border-bottom: 1px solid transparent;
+    opacity: 1;
+  }
+  header nav a {
+    border-bottom: none;
+    display: inline-block;
+    padding: 0;
+    opacity: 1;
+    font-size: 12px;
+    color: #545b6e;
+  }
+  header label.coverScreen {
+    display: none;
+  }
+  header.full-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  header.full-img+main {
+    height: 100vh;
+  }
+  header.full-img+main .fixed-width {
+    padding-top: 117px;
+  }
+  header.full-img+main .imgArea {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    display: inline-block;
+    overflow: hidden;
+  }
+  main {
+    min-height: calc(100vh - 113px);
+  }
+  main .fixed-width {
+    padding: 4px 152px 0;
+    text-align: left;
+  }
+  main .textArea,
+  main .imgArea {
+    display: inline-block;
+    vertical-align: top;
+  }
+  main .textArea {
+    width: 40%;
+  }
+  main .imgArea {
+    width: 60%;
+  }
+  main .imgArea>img {
+    width: 100%;
+    text-align: bottom;
+  }
+  main h2.title {
+    text-align: left;
+  }
+  form .btnWrap {
+    text-align: right;
+  }
+  footer {
+    transform: translateY(-75px);
+    color: #fff;
+  }
+}

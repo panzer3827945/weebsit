@@ -1,0 +1,578 @@
+  @charset "UTF-8";
+  @media screen and (min-width:300px) {
+    body {
+      overflow: hidden;
+    }
+    h1 {
+      color: #545b6e;
+    }
+    header nav ul.item2 {
+      display: none;
+    }
+    .panelGroup .panelControl {
+      position: absolute;
+      top: -200px;
+      width: 5px;
+      height: 5px;
+      opacity: 0;
+    }
+    .panelGroup .tabGroup {
+      width: 100vw;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      background-color: transparent;
+    }
+    .panelGroup .tabGroup label {
+      display: inline-block;
+      width: calc(100vw / 6 - 5px);
+      height: 27px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 27px;
+      color: #545b6e;
+      background-color: #e69d42;
+      border-radius: 5px 5px 0 0;
+    }
+    .panelGroup #radio1:checked~.tabGroup [for="radio1"],
+    .panelGroup #radio2:checked~.tabGroup [for="radio2"],
+    .panelGroup #radio3:checked~.tabGroup [for="radio3"],
+    .panelGroup #radio4:checked~.tabGroup [for="radio4"],
+    .panelGroup #radio5:checked~.tabGroup [for="radio5"],
+    .panelGroup #radio1:hover~.tabGroup [for="radio1"],
+    .panelGroup #radio2:hover~.tabGroup [for="radio2"],
+    .panelGroup #radio3:hover~.tabGroup [for="radio3"],
+    .panelGroup #radio4:hover~.tabGroup [for="radio4"],
+    .panelGroup #radio5:hover~.tabGroup [for="radio5"] {
+      background-color: #fff;
+    }
+    .panelGroup #radio1:checked~.contentGroup .content1,
+    .panelGroup #radio2:checked~.contentGroup .content2,
+    .panelGroup #radio3:checked~.contentGroup .content3,
+    .panelGroup #radio4:checked~.contentGroup .content4,
+    .panelGroup #radio5:checked~.contentGroup .content5,
+    .panelGroup #radio1:hover~.contentGroup .content1,
+    .panelGroup #radio2:hover~.contentGroup .content2,
+    .panelGroup #radio3:hover~.contentGroup .content3,
+    .panelGroup #radio4:hover~.contentGroup .content4,
+    .panelGroup #radio5:hover~.contentGroup .content5 {
+      display: block;
+    }
+    /* div 個人介紹 contentGroup */
+    .contentGroup {
+      overflow: scroll;
+      height: calc(100vh - 113px);
+      overflow-x: hidden;
+      margin-top: 7px;
+    }
+    .contentGroup .content {
+      display: none;
+    }
+    .contentGroup .content>h1 {
+      display: none;
+    }
+    .contentGroup .content .textArea {
+      text-align: left;
+      color: #545b6e;
+      margin: 49px 0 19px 13%;
+    }
+    .contentGroup .textArea h2 {
+      font-size: 40px;
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: 0.8px;
+    }
+    .contentGroup .textArea h2 span {
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 1.04;
+      letter-spacing: 0.52px;
+      display: block;
+    }
+    .contentGroup .textArea .cityMail {
+      margin: 16px 0 38px;
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.53;
+      letter-spacing: 0.38px;
+    }
+    .contentGroup .textArea .motto {
+      display: none;
+    }
+    .contentGroup .imgArea {
+      text-align: right;
+      margin-bottom: 27px;
+    }
+    .contentGroup .imgArea img {
+      width: 48%;
+      transform: rotateY(180deg);
+      margin-right: 10%;
+    }
+    /* section 個人技能 skill */
+    .skill {
+      background-color: #545b6e;
+    }
+    .skill .fixed-width {
+      padding: 64px 44px;
+    }
+    .skill h1 {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 40px;
+      font-weight: 900;
+      letter-spacing: 1.2px;
+      text-align: center;
+    }
+    .skill h4.subTitle {
+      font-size: 21px;
+      font-weight: 900;
+      line-height: 1.29;
+      letter-spacing: 0.63px;
+      text-align: left;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin: 56px 0 29px;
+    }
+    .skill .listWrap {
+      margin: 4px 0px;
+      text-align: left;
+    }
+    .skill .itemName,
+    .skill .itemBar,
+    .skill .itemPercentage {
+      font-size: 18px;
+      letter-spacing: 0.27px;
+      font-weight: 300;
+      color: #ffffff;
+    }
+    .skill .itemName {
+      width: 100%;
+      display: block;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 0.54px;
+    }
+    .skill .itemBar {
+      width: 80%;
+      height: 11px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .skill .itemBar .kBar {
+      height: 100%;
+      background-color: #e69d42;
+    }
+    .skill .itemPercentage {
+      width: 18%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .skill .sk1 {
+      width: 80%;
+    }
+    .skill .sk2 {
+      width: 80%;
+    }
+    .skill .sk3 {
+      width: 60%;
+    }
+    .skill .sk4 {
+      width: 80%;
+    }
+    .skill .sk5 {
+      width: 50%;
+    }
+    .skill .sk6 {
+      width: 90%;
+    }
+    .skill .sk7 {
+      width: 80%;
+    }
+    .skill .sk8 {
+      width: 80%;
+    }
+    .skill .sk9 {
+      width: 80%;
+    }
+    .skill .sk10 {
+      width: 80%;
+    }
+    /* article 個人作品 assets */
+    .assets {
+      padding: 0 9.5%;
+    }
+    .assets h1 {
+      margin: 61px 0 44px;
+    }
+    .assets .item {
+      width: 100%;
+      margin: 10% 0;
+    }
+    .assets button.orange {
+      margin: 25px 0 130px;
+      box-shadow: none;
+    }
+    .assets button.orange a {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 2;
+      letter-spacing: 0.6px;
+      color: #ffffff;
+      display: block;
+    }
+    /* article 工作經歷 experience */
+    .experience .fixed-width {
+      padding: 0 9.5%;
+    }
+    .experience h1 {
+      margin-bottom: 51px;
+    }
+    .experience .timeLine li {
+      height: 150px;
+      text-align: left;
+    }
+    .experience .timeLine .jobYear {
+      text-align: right;
+    }
+    .experience .timeLine li a {
+      color: #545b6e;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.88;
+      color: #545b6e;
+    }
+    .experience .upBtn {
+      width: 37px;
+      height: 37px;
+      margin: 131px 0 156px;
+    }
+    footer {
+      font-size: 10px;
+      font-weight: 300;
+      line-height: 1.1;
+      color: #545b6e;
+    }
+  }
+  
+  @media screen and (min-width:768px) {
+    .panelGroup .tabGroup {
+      position: relative;
+      margin-top: 44px;
+    }
+    .panelGroup .tabGroup label {
+      width: 120px;
+      height: 52px;
+      line-height: 52px;
+      border-radius: 8px 8px 0 0;
+    }
+    /* div 個人介紹 contentGroup */
+    .contentGroup {
+      height: calc(100vh - 190px);
+      margin-top: 0px;
+    }
+    .contentGroup .content>h1 {
+      display: block;
+      margin: 80px 0 24px
+    }
+    .contentGroup .content .textArea {
+      width: 50%;
+      float: right;
+      margin: 0;
+    }
+    .contentGroup .textArea h2 {
+      font-size: 28px;
+      letter-spacing: 0.56px;
+      margin: 129px 0 17px;
+    }
+    .contentGroup .textArea h2 span {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.08;
+      letter-spacing: 0.56px;
+      display: inline-block;
+    }
+    .contentGroup .textArea .cityMail {
+      font-size: 13px;
+      letter-spacing: 0.26px;
+    }
+    .contentGroup .textArea .motto {
+      display: block;
+      width: 244px;
+      font-size: 20px;
+      line-height: 1.5;
+      letter-spacing: 0.4px;
+    }
+    .contentGroup .imgArea {
+      width: 50%;
+      float: left;
+    }
+    .contentGroup .imgArea img {
+      width: 380px;
+      transform: rotateY(0);
+      margin-right: 0%;
+    }
+    /* section 個人技能 skill */
+    .skill .fixed-width {
+      padding: 85px 159px;
+    }
+    .skill h1 {
+      font-size: 60px;
+      letter-spacing: 1.8px;
+    }
+    .skill h4.subTitle {
+      text-align: center;
+    }
+    .skill .listWrap {
+      margin: 15px 0px;
+      text-align: left;
+    }
+    .skill .itemName,
+    .skill .itemBar,
+    .skill .itemPercentage {
+      letter-spacing: 0.54px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .skill .itemName {
+      width: 20%;
+      display: inline-block;
+      text-align: right
+    }
+    .skill .itemBar {
+      width: 60%;
+      margin: 0 5px;
+    }
+    .skill .itemPercentage {
+      width: 10%;
+    }
+    /* article 個人作品 assets */
+    .assets {
+      padding: 0 11%;
+    }
+    .assets h1 {
+      margin: 43px 0;
+    }
+    .assets .item {
+      width: 48%;
+      margin: 1%;
+      border: solid 1px #707070;
+    }
+    .assets .item:nth-child(odd) {
+      float: left;
+    }
+    .assets .item:nth-child(even) {
+      float: right;
+    }
+    .assets button.orange {
+      margin: 33px 0 151px;
+    }
+    .assets button.orange a {
+      font-size: 13px;
+      letter-spacing: 0.39px;
+    }
+    /* article 工作經歷 experience */
+    .experience {
+      background-image: url(/imgs/webimages/about_07.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+    .experience .fixed-width {
+      padding: 0 14%;
+    }
+    .experience .fixed-width h1 {
+      margin-bottom: 110px;
+    }
+    .experience .timeLine li {
+      height: 190px;
+      position: relative;
+    }
+    .experience .timeLine .jobYear {
+      display: none;
+    }
+    .experience .timeLine li a {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.5;
+      color: #545b6e;
+    }
+    .experience .timeLine li::after {
+      content: '';
+      height: 100%;
+      width: 3px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: #e69d42;
+    }
+    .experience .timeLine li a::after {
+      content: '';
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 50%;
+      border: 3px solid #e69d42;
+      background-color: #f0f0ef;
+      z-index: 1;
+    }
+    .experience li a:hover::after {
+      background-color: #e69d42;
+    }
+    .experience li:nth-child(odd)>div {
+      width: 45%;
+      text-align: left;
+      margin-right: 0;
+      float: right;
+    }
+    .experience li:nth-child(even)>div {
+      width: 45%;
+      text-align: right;
+      margin-left: 0;
+    }
+    .experience .upBtn {
+      width: 37px;
+      height: 37px;
+      margin: 91px 0 1200px;
+    }
+  }
+  
+  @media screen and (min-width:1280px) {
+    header ul li:nth-child(2) {
+      margin: 0 52px;
+    }
+    header ul li:nth-child(3) a {
+      padding: 5px 12px;
+      border: 1px solid #545b6e;
+      border-radius: 5px;
+    }
+    .panelGroup .tabGroup {
+      padding-right: 170px;
+      text-align: right;
+    }
+    .panelGroup .tabGroup label {
+      width: 128px;
+      text-align: center;
+    }
+    /* div 個人介紹 contentGroup */
+    .contentGroup {
+      height: calc(100vh - 210px);
+    }
+    .contentGroup .content h1 {
+      display: block;
+      margin: 80px 0 24px
+    }
+    .contentGroup .content .textArea {
+      padding-left: 195px;
+    }
+    .contentGroup .textArea h2 {
+      line-height: 1.08;
+    }
+    .contentGroup .textArea h2 span {
+      font-weight: 500;
+    }
+    /* section 個人技能 skill */
+    .skill {
+      background-color: none;
+      background-image: url(/imgs/webimages/about_02.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .skill .fixed-width {
+      padding: 99px 362px;
+    }
+    .skill h4.subTitle:nth-of-type(2) {
+      margin-top: 90px;
+    }
+    .skill h4.subTitle:nth-of-type(3) {
+      margin-top: 113px;
+    }
+    .skill .itemName,
+    .skill .itemBar,
+    .skill .itemPercentage {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .skill .itemName {
+      text-align: right;
+    }
+    .skill .itemBar {
+      margin: 0 15px;
+    }
+    /* article 個人作品 assets */
+    .assets h1 {
+      margin: 108px 0;
+    }
+    .assets .item {
+      width: 44%;
+      margin: 25px;
+    }
+    .assets .item:nth-child(odd) {
+      float: left;
+    }
+    .assets .item:nth-child(even) {
+      float: right;
+    }
+    .assets button.orange {
+      margin: 106px 0 311px;
+    }
+    .assets button.orange a {
+      font-size: 20px;
+      letter-spacing: 0.39px;
+    }
+    /* article 工作經歷 experience */
+    .experience {
+      background-image: url(/imgs/webimages/about_07.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+    .experience .timeLine li::after {
+      content: '';
+      height: 100%;
+      width: 3px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: #e69d42;
+    }
+    .experience .timeLine li a::after {
+      content: '';
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 50%;
+      border: 3px solid #e69d42;
+      background-color: #f0f0ef;
+      z-index: 1;
+    }
+    .experience li a:hover::after {
+      background-color: #e69d42;
+    }
+    .experience li:nth-child(odd)>div {
+      width: 45%;
+      text-align: left;
+      margin-right: 0;
+      float: right;
+    }
+    .experience li:nth-child(even)>div {
+      width: 45%;
+      text-align: right;
+      margin-left: 0;
+    }
+  }

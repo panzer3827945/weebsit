@@ -1,0 +1,203 @@
+  @charset "UTF-8";
+  @media screen and (min-width:300px) {
+    /* global */
+    header .item3 {
+      display: none;
+    }
+    header .item2 li:nth-of-type(2) {
+      margin: 0 25px;
+    }
+    /* scalesBase1 */
+    .scalesBase1 .textArea label {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .scalesBase1 .textArea select {
+      width: 100%;
+      padding: 0 5px;
+    }
+    .scalesBase1 input[type="number"] {
+      width: 100%;
+    }
+    .scalesBase1 button.confirm {
+      margin-top: 10px;
+    }
+    .scalesBase1 button[type="submit"] {
+      width: 100%;
+      margin-top: 15px;
+    }
+    .scalesBase1 .imgArea {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width:768px) {
+    /* scalesBase1 */
+    .scalesBase1 form {
+      font-size: 0;
+      position: relative;
+    }
+    .scalesBase1 .textArea .inputWrap {
+      padding-top: 20px;
+    }
+    .scalesBase1 .textArea input[type="number"] {
+      width: calc(100% - 120px);
+    }
+    .scalesBase1 .textArea button.confirm {
+      position: absolute;
+      top: 50%;
+      left: calc(46% - 114px);
+    }
+    .scalesBase1 .textArea button[type="submit"] {
+      width: 45%;
+      margin-top: 25px;
+      margin-left: 55%;
+    }
+    main.scalesBase1 div.imgArea {
+      display: block;
+      padding-top: 54px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .scalesBase1 .imgArea p {
+      font-size: 38px;
+      width: 285px;
+      height: 90px;
+      font-weight: 900;
+      border-radius: 8px;
+      line-height: 93px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+      text-align: center;
+      position: relative;
+      margin: 0 auto;
+    }
+    .scalesBase1 .imgArea small {
+      font-size: 28px;
+      margin: 0 20px 0 30px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0%;
+    }
+    .scalesBase1 .imgArea img {
+      width: 285px;
+    }
+    .scalesBase1 .imgArea .pet img,
+    .scalesBase1 .imgArea .food img,
+    .scalesBase1 .imgArea .scalesg {
+      display: none;
+    }
+    .scalesBase1 .imgArea .pet {
+      height: 100px;
+      transform: translateY(20%);
+      position: relative;
+    }
+    .scalesBase1 .imgArea .pet img {
+      display: inline-block;
+    }
+    .scalesBase1 .imgArea .food {
+      height: 100px;
+    }
+    .scalesBase1 .imgArea .food img {
+      height: 100%;
+    }
+    .scalesBase1 .imgArea .pet img:first-of-type {
+      width: 200px;
+    }
+    .scalesBase1 .imgArea .pet img:last-of-type {
+      width: 77px;
+      height: 80px;
+      position: absolute;
+      bottom: -60px;
+      right: 30%;
+      transform-origin: 0% 0%;
+      animation-name: moveTail;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+    }
+    @keyframes moveTail {
+      0% {
+        transform: rotate(-10deg);
+      }
+      25% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(10deg);
+      }
+      75% {
+        transform: rotate(5deg);
+      }
+      100% {
+        transform: rotate(-10deg);
+      }
+    }
+    .scalesBase1 .imgArea .platform {
+      height: 50px;
+    }
+    .scalesBase1 .imgArea .scales {
+      position: relative;
+    }
+    .scalesBase1 .imgArea .pointer img {
+      width: 20px;
+    }
+    .scalesBase1 .imgArea .pointer {
+      position: absolute;
+      bottom: 50%;
+      left: 49%;
+    }
+    .scalesBase1 .imgArea .directionBtn {
+      position: absolute;
+      bottom: 90%;
+      left: 0%;
+      width: 100%;
+    }
+    .scalesBase1 .imgArea .directionBtn img {
+      width: 10px;
+      height: 17px;
+      margin: 0 24%;
+      cursor: pointer;
+    }
+    .scalesBase1 .imgArea .scalesKg {
+      display: block;
+    }
+    .scalesBase1 .imgArea .scalesg {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width:1280px) {
+    /* global */
+    /* scalesBase1 */
+    .scalesBase1 .textArea h2.title {
+      padding: 6px 0 10px;
+    }
+    .scalesBase1 .textArea .inputWrap {
+      display: block;
+      float: none;
+      width: 100%;
+      padding-top: 5px;
+    }
+    .scalesBase1 .textArea {
+      padding-right: 10%;
+    }
+    .scalesBase1 .textArea button.confirm {
+      position: absolute;
+      top: 49%;
+      left: calc(100% - 110px);
+    }
+    main.scalesBase1 div.imgArea {
+      display: inline-block;
+    }
+    .scalesBase1 .imgArea {
+      background-color: #dfe2e6;
+    }
+    .scalesBase1 .imgArea .scalesNumberg,
+    .scalesBase1 .imgArea .scalesNumberKg {
+      margin-top: 60px;
+    }
+    .scalesBase1 .textArea button[type="submit"] {
+      margin-top: 0;
+    }
+  }

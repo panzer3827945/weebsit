@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO語法 開始 -->
+  <!-- 給 google 看的 -->
+  <meta name="author" content="臺灣科技大學 推廣教育 響應式人才設計班" />
+  <meta name="description" content="本頁描述，不要超過 155 個字元。" />
+  <meta name="keywords" content="寵物, 管家, 智能," />
+
+  <!-- 給fb看的 Open Graph -->
+  <meta property="og:title" content="fb的標題（文章標題）" />
+  <meta property="og:description" content="fb的描述" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="fb上的網址" />
+  <meta property="og:image" content="圖片網址" />
+  <meta property="og:site_name" content="Site Name, i.e. Moz" />
+  <meta property="fb:admins" content="Facebook numeric ID" />
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@publisher_handle">
+  <meta name="twitter:title" content="Page Title">
+  <meta name="twitter:description" content="Page description less than 200 characters">
+  <meta name="twitter:creator" content="@author_handle">
+  <!-- Twitter summary card with large image must be at least 280x150px -->
+  <meta name="twitter:image:src" content=" http://www.example.com/image.html">
+  <!-- SEO語法 結束 -->
+  <title>電子秤</title>
+  <link rel="icon" href="/imgs/logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/CSS/notosanstc.css">
+  <link rel="stylesheet" href="/CSS/Roboto.css">
+  <link rel="stylesheet" href="/CSS/global.css">
+  <link rel="stylesheet" href="/CSS/scales.css">
+  <link rel="stylesheet" href="/https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900|Roboto:300,400,500,700,900&display=swap&subset=chinese-traditional">
+</head>
+
+<body>
+  <header class="full-width full-img">
+    <div class="fixed-width clearfix">
+      <input type="checkbox" id="bugger">
+      <div class="logo">
+        <div class="logoImgWrap"></div>
+        <span>寵物 X X X </span>
+      </div>
+      <nav>
+        <label for="bugger" class="menuControl"></label>
+        <ul class="item3">
+          <li><a href="/WEB/about.html">關於我們</a></li>
+          <li><a href="/WEB/member/">會員專區</a></li>
+          <li><a href="/WEB/loginRegister/loginRegister.html">註&nbsp冊</a></li>
+        </ul>
+        <ul class="item2">
+          <li>HI,<span id="titleUserName"> 頁頁頁</span></li>
+          <li><a href="/">登&nbsp出</a></li>
+          <li><a href="/index.html">首&nbsp頁</a></li>
+        </ul>
+      </nav>
+      <label for="bugger" class="coverScreen"></label>
+    </div>
+  </header>
+  <main class="scalesBase1 full-width">
+    <div class="fixed-width">
+      <div class="textArea">
+        <div class="breadcrumbs">會員專區 > 寵物註冊</div>
+        <h2 class="title">寵物註冊</h2>
+        <form action="">
+          <div class="inputWrap">
+            <label for="selectPet">*選擇寵物</label>
+            <select name="" id="selectPet">
+              <option value="" disabled selected hidden>從寵物清單中選取 </option>
+              <option value="" name="冰冰" value="冰冰">冰冰</option>
+              <option value="" name="大福" value="大福">大福</option>
+            </select>
+            <div class="err">
+              <img class="iconWrong" src="/imgs/svgicon/icon_wrong.svg" alt="">
+              <span id="verificationErr"> ERR MSG</span>
+            </div>
+          </div>
+          <div class="inputWrap">
+            <label for="scalesItem">*量測項目</label>
+            <select name="" id="scalesItem">
+              <option value="" disabled selected hidden>請選擇量測項目 </option>
+              <option value="" id="scalesItemKg" value="scalesItemKg">體重(Kg)</option>
+              <option value="" id="scalesItemg" value="scalesItemg">食物(g)</option>
+            </select>
+            <div class="err">
+              <img class="iconWrong" src="/imgs/svgicon/icon_wrong.svg" alt="">
+              <span id="verificationErr"> ERR MSG</span>
+            </div>
+          </div>
+          <div class="inputWrap">
+            <label for="inputNumber">*輸入數值</label><br>
+            <input type="number" name="" id="inputNumber" placeholder="請輸入重量">
+            <div class="err">
+              <img class="iconWrong" src="/imgs/svgicon/icon_wrong.svg" alt="">
+              <span id="verificationErr"> ERR MSG</span>
+            </div>
+            <button class="gray confirm">確認</button></div>
+          <div class="inputWrap">
+            <label for="">*食物選項</label><br>
+            <input type="radio" name="food" id="foodStaple">
+            <label for="foodStaple"> 主食 </label>
+            <input type="radio" name="food" id="foodDessert">
+            <label for="foodDessert">點心 </label>
+            <input type="radio" name="food" id="foodWater">
+            <label for="foodWater"> 水</label>
+            <div class="err">
+              <img class="iconWrong" src="/imgs/svgicon/icon_wrong.svg" alt="">
+              <span id="verificationErr"> ERR MSG</span>
+            </div>
+          </div>
+          <button type="submit" class="gray">送出</button>
+        </form>
+      </div>
+      <div class="imgArea">
+        <article class="scalesKg">
+          <div class="scalesNumberKg">
+            <p>0.00
+              <small class="numberKg">Kg</small>
+            </p>
+          </div>
+          <div class="pet">
+            <img src="/imgs/電子秤svg/kg_4.svg" alt="">
+            <img src="/imgs/電子秤svg/kg_5.svg" alt="">
+          </div>
+          <div class="platform">
+            <img src="/imgs/電子秤svg/kg_1.svg" alt="">
+          </div>
+          <div class="scales">
+            <img src="/imgs/電子秤svg/kg_2.svg" alt="">
+            <div class="pointer">
+              <img src="/imgs/電子秤svg/kg_3.svg" alt="">
+            </div>
+            <div class="directionBtn">
+              <img class="leftBtn" src="/imgs/電子秤svg/icon_left.svg" alt="">
+              <img class="rightBtn" src="/imgs/電子秤svg/icon_right.svg" alt="">
+            </div>
+          </div>
+        </article>
+        <article class="scalesg">
+          <div class="scalesNumberg">
+            <p>0.00
+              <small class="numberg">g</small>
+            </p>
+          </div>
+          <div class="food">
+            <img src="/imgs/電子秤svg/g_4.svg" alt="">
+          </div>
+          <div class="platform">
+            <img src="/imgs/電子秤svg/g_1.svg" alt="">
+          </div>
+          <div class="scales">
+            <img src="/imgs/電子秤svg/g_2.svg" alt="">
+            <div class="pointer">
+              <img src="/imgs/電子秤svg/g_3.svg" alt="">
+            </div>
+            <div class="directionBtn">
+              <img class="leftBtn" src="/imgs/電子秤svg/icon_left.svg" alt="">
+              <img class="rightBtn" src="/imgs/電子秤svg/icon_right.svg" alt="">
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

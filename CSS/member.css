@@ -1,0 +1,184 @@
+  @charset "UTF-8";
+  @media screen and (min-width:300px) {
+    /* global */
+    header .item3 {
+      display: none;
+    }
+    /* memberUser */
+    main .fixed-width {
+      text-align: left;
+    }
+    main .ItemWrap {
+      width: calc(100% / 2);
+      display: inline-block;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    main .imgWrap {
+      position: relative;
+      border-radius: 50%;
+      overflow: hidden;
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      cursor: pointer;
+    }
+    main .imgWrap span {
+      position: absolute;
+      bottom: 15%;
+      left: 0;
+      right: 0;
+      font-size: 11px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+    main .imgWrap:hover img {
+      display: none;
+    }
+    main .ItemWrap:nth-of-type(1) .imgWrap {
+      background-image: url(/imgs/svgicon/icon_01_color.svg);
+    }
+    main .ItemWrap:nth-of-type(2) .imgWrap {
+      background-image: url(/imgs/svgicon/icon_02_color.svg);
+    }
+    main .ItemWrap:nth-of-type(3) .imgWrap {
+      background-image: url(/imgs/svgicon/icon_03_color.svg);
+    }
+    main .ItemWrap:nth-of-type(4) .imgWrap {
+      background-image: url(/imgs/svgicon/icon_04_color.svg);
+    }
+    main .ItemWrap:nth-of-type(5) .imgWrap {
+      background-image: url(/imgs/svgicon/icon_05_color.svg);
+    }
+    main .ItemWrap:nth-of-type(6) .imgWrap {
+      background-image: url(/imgs/svgicon/icon_06_color.svg);
+    }
+    main .ItemWrap:nth-of-type(8) .imgWrap {
+      background-image: url(/imgs/svgicon/icon_08_color.svg);
+    }
+    main .ItemWrap:nth-of-type(9) .imgWrap {
+      background-image: url(/imgs/svgicon/icon_09_color.svg);
+    }
+    main .ItemWrap:nth-of-type(7) .imgWrap {
+      background-image: url(/imgs/svgicon/icon_07_color.svg);
+    }
+    main .ItemWrap:nth-of-type(7) {
+      display: none;
+    }
+    .memberSuper .ItemWrap:nth-of-type(7) {
+      display: inline-block;
+    }
+    /* memberSuperAccount */
+    .memberSuperAccount a {
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid #545b6e;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    /* memberSuperAccount2 */
+    .memberSuperAccount2 .fixed-width {
+      text-align: left;
+    }
+    .memberSuperAccount2 .accountWrap .accountName,
+    .memberSuperAccount2 .accountWrap .accountMail {
+      display: none;
+    }
+    .memberSuperAccount2 .accountWrap .accountTitle {
+      padding: 13px 16px;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+      background-color: #545b6e;
+      color: #fff;
+      font-size: 16px;
+    }
+    .memberSuperAccount2 .accountWrap .accountSubTitle {
+      border: 1px solid #707070;
+      transform: translateY(-5px);
+      border-radius: 0 0 8px 8px;
+      border: solid 1px #707070;
+      background-color: #ffffff;
+      height: 250px;
+      overflow-y: scroll;
+    }
+    .memberSuperAccount2 .accountWrap .userWrap {
+      padding-left: 15px;
+    }
+    .memberSuperAccount2 .accountWrap .userList {
+      margin-bottom: 10px;
+    }
+    .memberSuperAccount2 .userList:hover {
+      background-color: #dfe2e6;
+    }
+    .memberSuperAccount2 .userList .userName input {
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .memberSuperAccount2 .userList .userMail {
+      font-size: 11px;
+      padding-left: 25px;
+    }
+    .memberSuperAccount2 .btnWrap {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+  
+  @media screen and (min-width:768px) {
+    /* global */
+    /*main */
+    main .ItemWrap {
+      width: calc(100% / 3);
+      margin-bottom: 16px;
+    }
+    main .imgWrap {
+      width: 153px;
+      height: 153px;
+    }
+    main .imgWrap span {
+      font-size: 20px;
+    }
+    /* memberSuperAccount */
+    .memberSuperAccount .textArea {
+      padding: 15px 60% 0 0px;
+    }
+    /* .memberSuperAccount2  */
+  }
+  
+  @media screen and (min-width:1280px) {
+    /* memberSuperAccount */
+    .memberSuperAccount .textArea {
+      padding: 0;
+    }
+    .memberSuperAccount .textArea p {
+      width: 180px;
+    }
+    /* memberSuperAccount2 */
+    .memberSuperAccount2 .accountWrap .accountSubTitle {
+      height: 200px;
+    }
+    .memberSuperAccount2 .accountWrap .accountName,
+    .memberSuperAccount2 .userWrap .userName {
+      width: 40%;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 16px;
+    }
+    .userList {
+      font-size: 0;
+    }
+    .memberSuperAccount2 .accountWrap .accountMail,
+    .memberSuperAccount2 .userWrap .userMail {
+      width: 59%;
+      display: inline-block;
+      font-size: 16px;
+    }
+    .memberSuperAccount2 .accountWrap .accountName,
+    .memberSuperAccount2 .accountWrap .accountMail {
+      padding: 5px 35px;
+    }
+  }

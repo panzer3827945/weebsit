@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@media screen and (min-width:300px) {
+  /* global  */
+  header .item2 {
+    display: none;
+  }
+  aside {
+    width: 260px;
+    position: absolute;
+    top: 40%;
+    left: -120vw;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px 0 rgba(84, 91, 110, 0.5);
+    background-color: #fff;
+    z-index: 1;
+  }
+  aside .alertTitle {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  aside .content {
+    margin: 14px 0 41px;
+    font-size: 16px;
+  }
+  /* loginRegister */
+  .loginRegister .inputWrap {
+    padding-top: 18px;
+  }
+  .loginRegister form .btnWrap {
+    padding: 60px 0 23px;
+  }
+  .loginRegister form .btnWrap button:nth-of-type(2) {
+    float: right;
+  }
+  .loginRegister .rememberForget {
+    text-align: left;
+  }
+  .loginRegister .rememberForget input {
+    width: 5px;
+    height: 5px;
+    margin-right: 12px;
+  }
+  .loginRegister .rememberForget span {
+    float: right;
+    font-size: 16px;
+  }
+  .loginRegister .imgArea {
+    display: none;
+  }
+  /* loginRegister11 */
+  /* loginRegister22Forget */
+  .loginRegister22Forget .inputWrap {
+    width: 100%;
+  }
+  main form .inputWrap:nth-child(even) {
+    float: none;
+  }
+  /* loginRegister3 */
+  .loginRegister3 img {
+    max-width: 340px;
+    max-height: 304px;
+    margin-bottom: 25px;
+  }
+  /* loginRegister4 */
+  .loginRegister4 .fixed-width div {
+    height: 400px;
+    background-image: url(/imgs/webimages/login_04.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    outline: 1px solid green;
+    padding: 5% 10% 25%;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.44px;
+    color: #e69d42;
+  }
+}
+
+@media screen and (min-width:768px) {
+  /* loginRegisterMain */
+  .loginRegister .inputWrap {
+    width: 100%;
+  }
+  .loginRegister form .btnWrap button {
+    width: 160px;
+    margin-top: 59px;
+  }
+  .loginRegister form .btnWrap button:nth-of-type(1) {
+    float: left;
+  }
+  /* loginRegister11 */
+  .loginRegister11 .inputWrap:nth-child(5) {
+    width: 100%;
+  }
+  .loginRegister11 .inputWrap:nth-child(6) {
+    width: 100%;
+    float: none;
+  }
+  .loginRegister11 .inputWrap:nth-child(6) input {
+    width: 45%;
+  }
+  /* loginRegister22Forget */
+  .loginRegister22Forget .inputWrap {
+    width: 45%;
+  }
+  main form .inputWrap:nth-child(even) {
+    float: right;
+  }
+  /* .loginRegister3 */
+  .loginRegister3 .fixed-width {
+    text-align: center;
+  }
+  /* loginRegister4 */
+  .loginRegister4 .fixed-width div {
+    height: 400px;
+    background-image: url(/imgs/webimages/login_03.svg);
+    background-size: contain;
+    padding: 5% 12% 25%;
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  /* global */
+  header .item2 {
+    display: block;
+  }
+  header .item3,
+  header .item2 span,
+  header .item2 li:nth-of-type(1) {
+    display: none;
+  }
+  /* loginRegisterMain */
+  .loginRegister .imgArea {
+    display: inline-block;
+    text-align: center;
+  }
+  .loginRegister .imgArea img {
+    width: 70%;
+  }
+  /* loginRegister11 */
+  .loginRegister11 .inputWrap:nth-child(5) {
+    width: 45%;
+  }
+  .loginRegister11 .inputWrap:nth-child(6) {
+    width: 45%;
+    float: right;
+  }
+  .loginRegister11 .inputWrap:nth-child(6) input {
+    width: 100%;
+  }
+  .loginRegister11 form .btnWrap {
+    text-align: right;
+  }
+}
